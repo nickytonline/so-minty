@@ -1,7 +1,8 @@
-# Web3 Starter
+# So Minty
 
-The goal of this project is to give you an opinionated boilerplate to start a
-web3 project.
+A Buildspace project where you learn to mint your own collection.
+
+https://user-images.githubusercontent.com/833231/139594255-3fbc2acd-8bad-4948-a21b-519ca7a68d74.mp4
 
 ## Contributing
 
@@ -153,11 +154,6 @@ To learn more about Next.js, take a look at the following resources:
 You can check out
 [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
 feedback and contributions are welcome!
-
-### Apollo
-
-For more on Apollo, check out their
-[official documentation](http://apollographql.com/docsd).
 
 ### Ethers.js
 
