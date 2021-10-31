@@ -42,7 +42,7 @@ export const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({
         placeItems: 'center',
         width: '10rem',
         height: '10rem',
-        color: '#fff',
+        color: '#000',
         backgroundColor: 'accent',
         '@media screen and (prefers-reduced-motion: no-preference)': {
           animation: `${pulse} 1.5s ease-in-out infinite`,
