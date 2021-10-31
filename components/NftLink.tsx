@@ -32,7 +32,7 @@ export const NftLink: React.FC<{
   return (
     <a
       sx={{
-        color: '#000',
+        color: '#15599E',
         wordBreak: 'break-word',
         borderRadius: '0.75rem',
         padding: '0.5rem',
@@ -40,7 +40,11 @@ export const NftLink: React.FC<{
         alignItems: 'center',
         backgroundColor: '#fff',
         '&:hover svg': {
-          transform: 'rotate(-15deg)',
+          transition: 'transform 0.5s ease-in-out',
+          transform: 'rotate(-25deg)',
+        },
+        '& svg': {
+          transition: 'transform 0.5s ease-in-out',
         },
       }}
       href={url}
@@ -51,6 +55,7 @@ export const NftLink: React.FC<{
       <OpenSeaIcon width="24" height="24" />{' '}
       <span
         sx={{
+          ariaHidden: 'true',
           marginLeft: '0.5rem',
         }}
       >
