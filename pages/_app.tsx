@@ -6,7 +6,13 @@ import { defaultTheme } from '../themes/defaultTheme';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <div sx={{ display: 'grid', placeItems: 'center' }}>
+      <div
+        sx={{
+          display: 'grid',
+          placeItems: 'center',
+          margin: '1rem',
+        }}
+      >
         <Component {...pageProps} />{' '}
       </div>
     </ThemeProvider>

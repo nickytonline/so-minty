@@ -13,10 +13,7 @@ export const Wallet: React.FC<{
         <span
           sx={{
             display: 'inline-flex',
-            background: '#000',
-            color: '#fff',
             fontWeight: 500,
-            padding: '0.5rem',
             borderRadius: '0.5rem',
             '& a': {
               wordBreak: 'break-word',

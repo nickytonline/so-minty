@@ -12,13 +12,13 @@ export const Button: React.FC<ButtonProps> = ({
         display: 'inline-flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'accent',
-        color: '#fff',
+        color: '#000',
         fontWeight: 700,
         borderRadius: '0.5rem',
         border: 'none',
         padding: '0.25rem 0.5rem',
         cursor: 'pointer',
+        background: 'linear-gradient(to left,#00ff00 0%, #fff 100%)',
       }}
       onClick={onClick}
     >

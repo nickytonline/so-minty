@@ -13,7 +13,7 @@ import { Miner } from '@components/Miner';
 import { getMissingMetamaskMessage } from 'utilities/metamask';
 import { LoadingIndicator } from '@components/LoadingIndicator';
 import { Button } from '@components/Button';
-import { NftLink } from '@components/OpenSeaLink';
+import { NftLink } from '@components/NftLink';
 
 const Home: NextPage = () => {
   const [currentAccount, setCurrentAccount] = useState<Maybe<string>>(null);
@@ -198,7 +198,16 @@ const Home: NextPage = () => {
     <>
       <header>
         <h1 sx={{ fontFamily: 'heading' }}>
-          Welcome to <span sx={{ color: 'accent' }}>so minty 💚</span>
+          Welcome to{' '}
+          <span
+            sx={{
+              background: 'linear-gradient(to left,#00ff00 0%, #fff 100%)',
+              backgroundClip: 'text',
+              textFillColor: 'transparent',
+            }}
+          >
+            so minty 💚
+          </span>
         </h1>
       </header>
       <main>
@@ -211,7 +220,14 @@ const Home: NextPage = () => {
           </>
         )}
         {currentAccount && tokenId ? (
-          <div sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div
+            sx={{
+              display: 'inline-grid',
+              gridTemplateColumns: '1fr 1fr',
+              gridGap: '1rem',
+              marginTop: '1rem',
+            }}
+          >
             <NftLink
               contractAddress={CONTRACT_ADDRESS}
               tokenId={tokenId}
@@ -221,11 +237,6 @@ const Home: NextPage = () => {
               contractAddress={CONTRACT_ADDRESS}
               tokenId={tokenId}
               type="openseacollection"
-            />
-            <NftLink
-              contractAddress={CONTRACT_ADDRESS}
-              tokenId={tokenId}
-              type="rarible"
             />
           </div>
         ) : (
@@ -238,12 +249,15 @@ const Home: NextPage = () => {
             sx={{
               listStyle: 'none',
               display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
+              gridTemplateColumns: 'repeat(3, 1fr)',
               placeItems: 'center',
               margin: 0,
               marginTop: '1rem',
               padding: 0,
               gridGap: '1rem',
+              '& a': {
+                color: 'accent',
+              },
             }}
           >
             <li>
@@ -251,6 +265,9 @@ const Home: NextPage = () => {
             </li>
             <li>
               <a href="https://timeline.iamdeveloper.com">about Nick</a>
+            </li>
+            <li>
+              <a href="https://buildspace.so">Buildspace</a>
             </li>
           </ul>
         </nav>
