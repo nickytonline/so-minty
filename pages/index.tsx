@@ -216,7 +216,7 @@ const Home: NextPage = () => {
         {currentAccount && (
           <>
             <Button onClick={mintNft}>Mint NFT</Button>
-            <h2 sx={{ marginTop: '1rem' }}>Last NFT minted Links</h2>
+            <h2 sx={{ marginTop: '1rem' }}>Last NFT minted</h2>
           </>
         )}
         {currentAccount && tokenId ? (
